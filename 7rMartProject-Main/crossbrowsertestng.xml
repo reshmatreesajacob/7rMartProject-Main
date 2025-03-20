@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="CrossBrowserTesting">
+	<test thread-count="5" name="ChromeTest">
+		<parameter name="browser" value="Chrome"></parameter>
+		<classes>
+			<!-- <class name="testScript.HomeTest" /> <class name="testScript.ManageNewsTest" 
+				/> <class name="testScript.SubCategoryTest" /> <class name="testScript.AdminUserTest" 
+				/> <class name="testScript.LoginTest" /> -->
+			<class name="testScript.AdminUserTest">
+				<methods>
+					<include
+						name="verifyWhetherUserIsAbleToAddNewUserToTheUsersList">
+					</include>
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+
+	<test thread-count="5" name="FirefoxTest">
+		<parameter name="browser" value="Firefox"></parameter>
+		<classes>
+			<!-- <class name="testScript.HomeTest" /> <class name="testScript.ManageNewsTest" 
+				/> <class name="testScript.SubCategoryTest" /> <class name="testScript.AdminUserTest" 
+				/> <class name="testScript.LoginTest" /> -->
+			<class name="testScript.AdminUserTest">
+				<methods>
+					<include
+						name="verifyWhetherUserIsAbleToAddNewUserToTheUsersList">
+					</include>
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+
+	<test thread-count="5" name="EdgeTest">
+		<parameter name="browser" value="Edge"></parameter>
+		<classes>
+			<!-- <class name="testScript.HomeTest" /> <class name="testScript.ManageNewsTest" 
+				/> <class name="testScript.SubCategoryTest" /> <class name="testScript.AdminUserTest" 
+				/> <class name="testScript.LoginTest" /> -->
+			<class name="testScript.AdminUserTest">
+				<methods>
+					<include
+						name="verifyWhetherUserIsAbleToAddNewUserToTheUsersList">
+					</include>
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
