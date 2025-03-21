@@ -7,10 +7,10 @@
 	</listeners>
 	<test thread-count="5" name="Test">
 		<classes>
-			<class name="testScript.AdminUserTest">
+			<class name="testScript.LoginTest">
 				<!--<methods>
 					<include
-						name="verifyWhetherUserIsAbleTosearchNewsInManageNews"></include>
+						name="verifyUserLoginWithInvalidUsernameAndInvalidPassword"></include>
 				</methods> -->
 			</class>
 		</classes>

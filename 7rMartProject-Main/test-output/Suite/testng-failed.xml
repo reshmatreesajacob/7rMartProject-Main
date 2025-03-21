@@ -7,14 +7,13 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testScript.AdminUserTest">
+      <class name="testScript.LoginTest">
         <methods>
           <include name="driverQuit"/>
-          <include name="verifyUserIsAbleToRefreshNewlyAddedUserPageUsingTheResetButton"/>
+          <include name="verifyUserLoginWithInvalidUsernameAndInvalidPassword" invocation-numbers="0"/>
           <include name="intializeBrowser"/>
-          <include name="verifyUserIsAbleToSearchNewlyAddedUsersInTheNewlyAddedUsersList"/>
         </methods>
-      </class> <!-- testScript.AdminUserTest -->
+      </class> <!-- testScript.LoginTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
